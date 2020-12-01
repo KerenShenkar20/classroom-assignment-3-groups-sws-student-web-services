@@ -11,4 +11,6 @@ app.get('/playlist', (req,res) => res.json({response: "get all playlists"})); //
     and student B writes the route for PUT /language */
 app.post('./playlists',(req, res) => res.json({response:"add new playlist"})); //Niv
 
+app.delete('/deletePlaylist/:id',(req, res) => res.json({response:"delete one playlist"})); //Ariel
+
 app.listen(port, () => console.log(`Listening on port ${port}`));
