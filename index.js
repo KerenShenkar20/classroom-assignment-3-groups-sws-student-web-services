@@ -9,5 +9,6 @@ app.get('/playlist', (req,res) => res.json({response: "get all playlists"})); //
     For example: 
     Student A writes the route for GET /playlist
     and student B writes the route for PUT /language */
+app.post('./playlists',(req, res) => res.json({response:"add new playlist"})); //Niv
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
