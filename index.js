@@ -13,6 +13,8 @@ app.post('/playlists', (req, res) => res.json({ response: "add new playlist" }))
 
 app.put('/playlist/:id', (req, res) => res.json({ response: `playlist ${req.params.id} updated` })); //Itamar
 
+app.get('/playlist/:id',(req, res) => res.json({response: `playlist number :${req.params.id}`})); //Danit Noa
+
 app.delete('/deletePlaylist/:id', (req, res) => res.json({ response: "delete one playlist" })); //Ariel
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
